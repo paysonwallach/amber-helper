@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-amber">
+    <comment>Browser Session</comment>
+    <glob pattern="*.ambr"/>
+    <icon name="application-x-amber"/>
+    <sub-class-of type="application/x-yaml"/>
+  </mime-type>
+</mime-info>

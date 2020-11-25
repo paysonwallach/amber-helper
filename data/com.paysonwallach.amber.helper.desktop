@@ -1,0 +1,8 @@
+[Desktop Entry]
+Terminal=false
+Type=Application
+Categories=Application;Utility;
+Exec=com.paysonwallach.amber.helper %F
+MimeType=application/x-amber;
+Name=Amber
+NoDisplay=true
