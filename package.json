@@ -1,15 +1,15 @@
 {
-  "name": "amber",
+  "name": "amber-helper",
   "description": "Serializable browsing sessions",
   "license": "GPL-3.0",
   "author": "Payson Wallach <payson@paysonwallach.com>",
-  "homepage": "https://github.com/paysonwallach/amber#readme",
+  "homepage": "https://github.com/paysonwallach/amber-helper#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/paysonwallach/amber"
+    "url": "https://github.com/paysonwallach/amber-helper"
   },
   "bugs": {
-    "url": "https://github.com/paysonwallach/amber/issues"
+    "url": "https://github.com/paysonwallach/amber-helper/issues"
   },
   "version": "0.1.0",
   "scripts": {
@@ -34,6 +34,23 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "npm run format"
+    }
+  },
+  "meta": {
+    "title": "Amber Helper",
+    "repository": {
+      "owner": "paysonwallach",
+      "name": "amber-helper"
+    },
+    "license": {
+      "name": "GNU General Public License v3.0",
+      "url": "https://github.com/paysonwallach/amber-helper/blob/master/LICENSE"
+    },
+    "codeOfConduct": {
+      "url": "https://github.com/paysonwallach/amber-helper/blob/master/CODE_OF_CONDUCT.md"
+    },
+    "releases": {
+      "url": "https://github.com/paysonwallach/amber-helper/releases"
     }
   },
   "standard-version": {
