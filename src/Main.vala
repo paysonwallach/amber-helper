@@ -27,8 +27,8 @@ namespace Amber {
 
         public Helper () {
             Object (
-                application_id: "com.paysonwallach.amber.helper",
-                flags : ApplicationFlags.HANDLES_OPEN);
+                application_id: Config.APP_ID,
+                flags: ApplicationFlags.HANDLES_OPEN);
         }
 
         public override void open (File[] files, string hint) {
