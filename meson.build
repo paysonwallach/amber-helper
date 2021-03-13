@@ -4,7 +4,7 @@ project(
   'c',
   license: 'GPL-3.0',
   meson_version: '>=0.55.0',
-  version: '0.1.0'
+  version: '0.2.0'
 )
 
 vala = meson.get_compiler('vala')
@@ -15,6 +15,8 @@ glib_dep = dependency('gtk+-3.0')
 
 conf = configuration_data()
 conf.set_quoted('APP_ID', meson.project_name())
+conf.set_quoted('BRIDGE_DBUS_SERVICE_NAME', 'com.paysonwallach.amber.bridge')
+conf.set_quoted('BRIDGE_DBUS_OBJECT_PATH', '/com/paysonwallach/amber/bridge')
 
 config_h = configure_file(
   output: 'config.h',
