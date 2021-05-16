@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Amber Helper</h1>
-  <p>Serializable browsing sessions</p>
+  <p>Bring the Unix philosophy to the browser.</p>
   <a href="https://github.com/paysonwallach/amber-helper/releases/latest">
     <img alt="Version 0.1.0" src="https://img.shields.io/badge/version-0.1.0-red.svg?cacheSeconds=2592000&style=flat-square" />
   </a>
@@ -15,7 +15,7 @@
 
 ## Background
 
-[Amber](https://github.com/paysonwallach/amber-web-extension#readme) is a browser extension that enables sessions to be saved as portable, human-readable, and editable files. [Amber Helper](https://github.com/paysonwallach/amber-helper) is the native component that provides OS-level integration and support for opening session files.
+[Amber](https://github.com/paysonwallach/amber-web-extension#readme) is a browser extension that enables sessions to be saved as portable, human-readable, and editable files. [Amber Helper](https://github.com/paysonwallach/amber-helper) is the host application that provides OS-level integration and support for opening session files.
 
 ## Installation
 
