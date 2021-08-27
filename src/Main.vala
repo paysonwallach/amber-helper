@@ -22,6 +22,44 @@ namespace Amber {
 
     }
 
+    [DBus (name = "com.paysonwallach.attention")]
+    private interface WindowManagerBuseIFace : Object {
+        public abstract void activate_window_demanding_attention () throws DBusError, IOError;
+
+    }
+
+    private class WindowManagerProxy : Object {
+        private static Once<WindowManagerProxy> instance;
+
+        public static unowned WindowManagerProxy get_default () {
+            return instance.once (() => {
+                return new WindowManagerProxy ();
+            });
+        }
+
+        construct {
+            try {} catch (IOError err) {
+                warning (err.message);
+            }
+        }
+
+        public void activate_window_demanding_attention () {
+            try {
+                WindowManagerBuseIFace? window_manager = Bus.get_proxy_sync (
+                    BusType.SESSION,
+                    "com.paysonwallach.attention",
+                    "/com/paysonwallach/attention");
+
+                window_manager.activate_window_demanding_attention ();
+            } catch (DBusError err) {
+                error (@"DBusError: $(err.message)");
+            } catch (IOError err) {
+                error (@"IOError: $(err.message)");
+            }
+        }
+
+    }
+
     public class Helper : Application {
         private uint watch_id = 0U;
 
@@ -38,6 +76,8 @@ namespace Amber {
                 Config.BRIDGE_DBUS_OBJECT_PATH);
 
             browser_proxy.open (uris);
+            WindowManagerProxy.get_default ()
+                .activate_window_demanding_attention ();
             release ();
         }
 
