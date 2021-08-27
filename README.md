@@ -2,7 +2,7 @@
   <h1>Amber Helper</h1>
   <p>Bring the Unix philosophy to the browser.</p>
   <a href="https://github.com/paysonwallach/amber-helper/releases/latest">
-    <img alt="Version 0.1.0" src="https://img.shields.io/badge/version-0.1.0-red.svg?cacheSeconds=2592000&style=flat-square" />
+    <img alt="Version 0.2.0" src="https://img.shields.io/badge/version-0.2.0-red.svg?cacheSeconds=2592000&style=flat-square" />
   </a>
   <a href="https://github.com/paysonwallach/amber-helper/blob/master/LICENSE" target="\_blank">
     <img alt="Licensed under the GNU General Public License v3.0" src="https://img.shields.io/github/license/paysonwallach/amber-helper?style=flat-square" />

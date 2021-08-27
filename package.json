@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "amber-helper",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Bring the Unix philosophy to the browser.",
   "license": "GPL-3.0",
   "author": "Payson Wallach <payson@paysonwallach.com>",
